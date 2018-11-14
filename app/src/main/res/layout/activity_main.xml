@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@mipmap/logo" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="57dp"
+                android:layout_height="30dp"
+                android:text="APP ID:"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="192dp" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/app_id"/>
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/txt_appID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="185dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/btn_authority"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_shape"
+            android:text="@string/authority"
+            android:textAllCaps="false"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="361dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Access Token:"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="279dp" />
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/secret"/>
+
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/txt_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="265dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_getData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get User Data"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_shape"
+            android:layout_marginLeft="15dp"/>
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="test"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/layout_bottom1"
+        android:layout_marginTop="20dp"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_fitbit1"
+            android:layout_width="165dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/btn_shape_push" />
+        <ImageView
+            android:layout_marginLeft="42.5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/fitbit"/>
+
+        <Button
+            android:id="@+id/btn_streamr1"
+            android:layout_width="165dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_shape2" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="42.5dp"
+            android:src="@mipmap/streamr" />
+
+    </RelativeLayout>
+
+</LinearLayout>
